@@ -16,7 +16,7 @@ font-family: 'roboto';
 }
 
 .top-bar {
-background-color: #0A1128;
+/*background-color: #0A1128;*/
 color: white;
 padding: 20px 20px;
 width:100%;
@@ -81,6 +81,11 @@ background-color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255) 
 }
 
+.menufr{
+    background-color:#0A1128;
+    margin-top: 250px;
+
+}
 
 label {
 display: block;
