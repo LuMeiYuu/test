@@ -15,10 +15,12 @@ if ($conn->connect_error) {
 }
 
 // Retrieve the most recently submitted row from the students table
-$sql = "SELECT * FROM students ORDER BY student_id DESC LIMIT 1";
+$sql = "SELECT * FROM students ORDER BY id_number DESC LIMIT 1";
 $result = $conn->query($sql);
 
-if ($result !== false && $result->num_rows > 0) {
+if ($result === false) {
+    echo "Error: " . $conn->error;
+} elseif ($result->num_rows > 0) {
     // Fetch the most recently inserted row data
     $row = $result->fetch_assoc();
 

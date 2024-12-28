@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Form to SQL</title>
     <link rel="stylesheet"  href="style.css">
+    <style>
+       label {
+        font-size: 20px;
+       }
+
+    </style>
 
 </head>
 <body> 
@@ -22,15 +28,17 @@
         <input type="text" id="name" name="name" required>
         <label for="id_number">ID Number:</label>
         <input type="text" id="id_number" name="id_number" required>
-        <label for="department">Department</label>
-        <Select id="department" name="department" required>
-            <option value="Humanities">Humanities</option>
-            <option value="sciences">Sciences</option>
+        <label for="Strand">Department</label>
+        <Select type="text" id="strand" name="strand" required>
+            <option value="humms">HUMMS</option>
+            <option value="abm">ABM</option>
+            <option value="ict">ICT</option>
+            <option value="g10">Grade 10</option>
         </Select>
         
-        <label for="Insert Image">Student Picture</label>
-        <input type="file" id="studentimg" name="studentimg" required>
-        <br>
+        <label style="margin:15px;"for="Insert Image">Student Picture</label>
+       <input style="margin:10px;" type="file" id="studentimg" name="studentimg" >
+        <br> 
         <input type="submit" value="Submit">
 
     </form>

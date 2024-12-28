@@ -22,9 +22,8 @@ $sql = "INSERT INTO attendance (id_number) VALUES ('$id_number')";
 // Execute SQL statement
 if ($conn->query($sql) === TRUE) {
     // Success: Redirect back to the original page
-    echo "<script>alert('Attendance recorded successfully for student');</script>";
-    echo "<script>window.location.href = '/test/attendance';</script>";
-    exit(); // Ensure that no further code is executed after the redirect
+    header("Location: display_rec.php");
+        exit(); // Ensure that no further code is executed after the redirect
 
 } else {
     // Error: Display the error message
